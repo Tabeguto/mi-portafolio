@@ -7,21 +7,21 @@ function Proyectos({ seleccionarProyecto }) {
         titulo: 'MasterBikes',
         descripcion: 'Sistema desarrollado para apoyar la gestión de venta, arriendo y reparación de bicicletas.',
         tecnologia: 'HTML, CSS y JavaScript',
-        imagen: '/proyecto1.jpg'
+        imagen: `${process.env.PUBLIC_URL}/proyecto1.jpg`
     };
 
     const saltateFila = {
         titulo: 'Sáltate la Fila',
         descripcion: 'Proyecto orientado a facilitar la compra de productos en kioscos y reducir los tiempos de espera.',
         tecnologia: 'Base de Datos y SQL',
-        imagen: '/proyecto2.jpg'
+        imagen: `${process.env.PUBLIC_URL}/proyecto2.jpg`
     };
 
     const urbanPark = {
         titulo: 'UrbanPark',
         descripcion: 'Aplicación desarrollada para gestionar espacios y registrar información relacionada con estacionamientos.',
         tecnologia: 'Kotlin',
-        imagen: '/proyecto3.jpg'
+        imagen: `${process.env.PUBLIC_URL}/proyecto3.jpg`
     };
 
     return (

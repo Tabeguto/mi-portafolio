@@ -8,7 +8,7 @@ function Introduccion() {
         {/* Foto de perfil */}
         <Col md={4}>
           <img
-            src="/perfil.jpg"
+            src={`${process.env.PUBLIC_URL}/perfil.jpg`}
             alt="Foto de perfil del portafolio"
             className="img-fluid rounded-circle"
           />
