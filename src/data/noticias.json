@@ -1,53 +1,17 @@
-import { useState } from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import datosNoticias from '../data/noticias.json';
-
-function Noticias() {
-
-  // Guardamos las noticias del archivo JSON en el estado
-  const [noticias] = useState(datosNoticias);
-
-  return (
-    <Container id="noticias" className="my-5">
-
-      <h2 className="text-center mb-4">
-        Noticias
-      </h2>
-
-      <Row className="g-4">
-
-        {noticias.map((noticia) => (
-
-          <Col md={4} key={noticia.id}>
-
-            <Card className="h-100">
-
-              <Card.Body>
-
-                <Card.Title>
-                  {noticia.titulo}
-                </Card.Title>
-
-                <Card.Subtitle className="mb-2 text-muted">
-                  {noticia.fecha}
-                </Card.Subtitle>
-
-                <Card.Text>
-                  {noticia.contenido}
-                </Card.Text>
-
-              </Card.Body>
-
-            </Card>
-
-          </Col>
-
-        ))}
-
-      </Row>
-
-    </Container>
-  );
-}
-
-export default Noticias;
+[
+  {
+    "id": 1,
+    "titulo": "Nuevos proyectos",
+    "descripcion": "Durante mi formación he desarrollado diferentes proyectos aplicando conocimientos de programación y desarrollo de software."
+  },
+  {
+    "id": 2,
+    "titulo": "Aprendiendo React",
+    "descripcion": "Actualmente estoy fortaleciendo mis conocimientos en React, trabajando con componentes, props, estados y diseño responsivo."
+  },
+  {
+    "id": 3,
+    "titulo": "Nuevas tecnologías",
+    "descripcion": "Continúo aprendiendo nuevas tecnologías y herramientas relacionadas con el desarrollo de aplicaciones y la programación."
+  }
+]
