@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Mi Portafolio Personal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portafolio personal desarrollado como proyecto académico utilizando React.
 
-## Available Scripts
+## Descripción
 
-In the project directory, you can run:
+Este proyecto presenta información personal, proyectos desarrollados durante mi formación académica, noticias y un formulario de contacto.
 
-### `npm start`
+El objetivo es aplicar conceptos de desarrollo frontend utilizando componentes reutilizables, estado, propiedades y diseño responsivo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologías utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- JavaScript
+- HTML
+- CSS
+- Bootstrap
+- React Bootstrap
+- JSON
+- Jasmine
+- Karma
 
-### `npm test`
+## Proyectos incluidos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### MasterBikes
+Sistema desarrollado para apoyar la gestión de venta, arriendo y reparación de bicicletas.
 
-### `npm run build`
+### Sáltate la Fila
+Proyecto orientado a facilitar la compra de productos en kioscos y reducir los tiempos de espera.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### UrbanPark
+Aplicación desarrollada para gestionar espacios de estacionamiento.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Funcionalidades
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Navegación entre secciones.
+- Presentación personal.
+- Visualización de proyectos.
+- Vista detallada de proyectos.
+- Noticias cargadas desde un archivo JSON.
+- Uso de estado con React.
+- Uso de props entre componentes.
+- Formulario de contacto.
+- Diseño responsivo.
+- Navegación mediante teclado.
+- Pruebas automatizadas.
 
-### `npm run eject`
+## Estructura del proyecto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+El proyecto utiliza componentes separados para organizar las distintas secciones del portafolio.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Entre los principales componentes se encuentran:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Navbar
+- Introduccion
+- Proyectos
+- ProyectoCard
+- DetalleProyecto
+- Noticias
+- Contacto
+- Footer
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Noticias
 
-## Learn More
+Las noticias se encuentran almacenadas en:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+src/data/noticias.json
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+El componente Noticias utiliza esta información para generar dinámicamente las tarjetas de noticias.
 
-### Code Splitting
+## Pruebas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Se configuraron Jasmine y Karma para realizar pruebas automatizadas.
 
-### Analyzing the Bundle Size
+Las pruebas se encuentran en:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+src/tests/
 
-### Making a Progressive Web App
+Actualmente se incluyen pruebas básicas y pruebas relacionadas con los proyectos del portafolio.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Para ejecutar las pruebas:
 
-### Advanced Configuration
+npx.cmd karma start karma.conf.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Resultado actual:
 
-### Deployment
+8 pruebas ejecutadas correctamente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Ejecutar el proyecto
 
-### `npm run build` fails to minify
+Instalar las dependencias:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm install
+
+Ejecutar el proyecto:
+
+npm start
+
+En PowerShell, si existe una restricción de ejecución de scripts, se puede utilizar:
+
+npm.cmd start
+
+## Autor
+
+Tamara Gutiérrez
+
+Estudiante de Ingeniería en Informática
